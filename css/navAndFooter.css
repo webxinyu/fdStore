@@ -1,0 +1,149 @@
+.navCon {
+	height: 80px;
+	background: rgba(255,255,255,0.6);
+	width: 100%;
+	position: fixed;
+	top: 20px;
+	left: 0;
+	min-width: 1200px;
+	z-index: 99;
+}
+nav {		/* 导航 */
+	height: 80px;
+	width: 1200px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -600px;
+	clear: both;
+}
+nav .logo {
+	width: 350px;
+	height: 80px;
+	float: left;
+}
+nav .logo>img {
+	display: block;
+	margin-top: 9px;
+}
+nav .navList {
+	float: right;
+	overflow: hidden;
+}
+nav .navList li {
+	float: left;
+	position: relative;
+	height: 80px;
+	width: 140px;
+}
+nav .navList li .navSlider {
+	width: 140px;
+	height: 80px;
+	background: #f60;
+	position: absolute;
+	z-index: 100;
+	top: -80px;
+}
+nav .navList li>a {
+	position: absolute;
+	height: 80px;
+	width: 140px;
+	text-align: center;
+	line-height: 80px;
+	text-decoration: none;
+	color: #333;
+	top: 0;
+	left: 0;
+	z-index: 101;
+}
+nav .navList li>a.blackA {
+	color: #fff;
+}
+nav .navList li:hover .navSlider {
+	top: 0;
+	animation: navAni 0.3s;
+}
+nav .navList li:hover a {
+	color: #fff;
+}
+/* 导航动画 */
+@keyframes navAni{
+	from{top: -80px;}
+	to{top: 0px;}
+}
+/* 底部信息栏和版权栏 */
+footer {
+	background: #404040;
+}
+.footer {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 30px 0;
+	overflow: hidden;
+}
+.telAndAddress {
+	float: left;
+	width: 800px;
+}
+.telAndAddress li {
+	margin-right: 20px;
+	overflow: hidden;
+	float: left;
+}
+.telAndAddress li .leftIcon {
+	float: left;
+	height: 60px;
+	width: 70px;
+}
+.telAndAddress li .rightTxt {
+	float: left;
+	height: 40px;
+	padding-left: 10px;
+	margin-top: 10px;
+	border-left: 1px #eee solid;
+}
+.telAndAddress li .rightTxt>h1 {
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+}
+.telAndAddress li .rightTxt>h2 {
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+}
+.qrCode {			/* 二维码 */
+	float: right;
+	height: 190px;
+	width: 160px;
+}
+.qrCode>img {
+	display: block;
+	width: 160px;
+	height: 160px;
+}
+.qrCode>p {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+.copyright {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	color: #fff;
+}
+.copyright>p {
+	text-align: center;
+	font-size: 14px;
+}
+.softInformation {
+	text-align: center;
+	font-size: 14px;
+}

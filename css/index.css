@@ -1,0 +1,376 @@
+
+/* banner */
+.banner {	
+	height: 720px;
+	min-width: 1200px;
+}
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
+	height: 720px;
+	width: 100%;
+}
+.swiper-pagination-bullet {				/* 自定义分页圆点样式 */
+	height: 10px;
+	width: 10px;
+	border: 2px #fff solid;
+}
+.swiper-pagination-bullet-active {
+	background: #fff;
+}
+.banner01 {
+	background: url(../img/banner01.png) no-repeat 50% 50% white;
+}
+.banner02 {
+	background: url(../img/banner02.png) no-repeat 50% 50% white;
+}
+.banner03 {
+	background: url(../img/banner03.png) no-repeat 50% 50% white;
+}
+.typePage {				/* 版心 */
+	width: 100%;
+}
+.about {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 43px;
+}
+.about>h1 {
+	font-size: 25px;
+	text-align: center;
+}
+.aboutEn {
+	text-align: center;
+	height: 28px;
+}
+.aboutEn span {
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+}
+.aboutEn span:nth-of-type(1) {
+	width: 200px;
+}
+.aboutEn span:nth-of-type(3) {
+	width: 200px;
+}
+.aboutEn span:nth-of-type(2) {
+	padding: 0 20px;
+	text-align: center;
+	color: #888;
+}
+.aboutLogo {
+	margin-top: 8px;
+	text-align: center;
+}
+.aboutSummary {
+	margin-top: 22px;
+	line-height: 25px;
+	font-size: 13px;
+	color: #7A7A7A;
+}
+.about>a {
+	display: block;
+	width: 83px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px #f60 solid;
+	color: #f60;
+	font-size: 12px;
+	margin: 0 auto;
+	border-radius: 4px;
+	text-decoration: none;
+}
+.news {			/* 新闻动态 */
+	margin-top: 60px;
+}
+.news>h1 {
+	font-size: 25px;
+	text-align: center;
+}
+.news>h2 {
+	text-align: right;
+	width: 1200px;
+	margin: 0 auto;
+	height: 42px;
+	line-height: 42px;
+}
+.news>h2>a {
+	font-size: 18px;	
+	color: #f60;
+	text-decoration: none;
+	font-weight: normal;
+}
+.news .imgNews {
+	height: 450px;
+	background: #D7D6D6;
+}
+.news .imgNews ul {
+	width: 1200px;
+	margin: 0 auto;
+	height: 450px;
+}
+.news .imgNews ul li {
+	float: left;
+	width: 300px;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.news .imgNews ul li:last-of-type {
+	margin-right: 0;
+}
+.news .imgNews ul li img {
+	height: 450px;
+	width: 300px;
+}
+.news .imgNews ul li .bottomSummary {
+	position: absolute;
+	width: 300px;
+	background: rgba(0,0,0,0.6);
+	height: 110px;
+	bottom: 0;
+	left: 0;
+}
+.news .imgNews ul li .bottomSummary h3 {
+	margin-top: 11px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: 12px;
+}
+.news .imgNews ul li .bottomSummary h1 {
+	height: 33px;
+	line-height: 33px;
+	font-size: 19px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: 12px;
+}
+.news .imgNews ul li .bottomSummary h2 {
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: 12px;
+}
+.news .imgNews ul li:hover .newsImg {			/* 鼠标移入 */
+	width: 400px;
+	height: 550px;
+	margin-left: -50px;
+	margin-top:	-50px;
+	animation: BigImgAni 0.3s;
+}
+/******* 鼠标移入时图片放大的动画 ********/
+@keyframes BigImgAni{
+	from {
+		width: 300px;
+		height: 450px;
+		margin-left: 0px;
+		margin-top:	0px;
+	}
+	to {
+		width: 400px;
+		height: 550px;
+		margin-left: -50px;
+		margin-top:	-50px;
+	}
+}
+.coreCompetitiveness {			/* 五大核心竞争力 */
+	margin-top: 60px;
+}
+.coreCompetitiveness>h1 {
+	font-size: 25px;
+	text-align: center;
+}
+.fiveCoreCompetitivenessImg {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+}
+.fiveCoreCompetitivenessImg>img {
+	display: inline-block;
+}
+/* 六大加盟保障体系 */
+.majorFranchise {
+	margin-top: 60px;
+}
+.majorFranchise>h1{
+	font-size: 25px;
+	text-align: center;
+}
+.sixNape {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 85px;
+}
+.sixNape li {
+	text-align: center;
+}
+.sixNape li:nth-of-type(2),
+.sixNape li:nth-of-type(3){
+	margin-top: -186px;
+}
+.majorCon {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+.majorCon>h1 {
+	position: absolute;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	text-align: center;
+	top: 20px;
+	font-size: 25px;
+	color: #B79A6B;
+}
+.majorPopUp {
+	width: 248px;
+    height: 246px;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: -354px;
+    left: 52px;
+    transform: rotate(45deg);
+}
+.majorPopUp .degDiv {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-45deg);
+}
+.majorPopUp .degDiv>h2 {
+	padding-top: 80px;
+	height: 37px;
+	line-height: 37px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+.majorPopUp .degDiv>h3 {
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+.majorCon:hover .majorPopUp {
+	top: 54px;
+	animation: majorAni 0.6s;
+}
+@keyframes majorAni{
+	from{top:-354px;}
+	to{top:54px;}
+}
+/* 动态资讯 */
+.dynamicInformationCon {
+	background: #fff;
+	height: 460px;
+	margin-top: 310px;
+	position: relative;
+}
+.dynamicInformation {
+	background: #fff;
+	width: 1200px;
+	height: 596px;
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+	top: -260px;
+	padding-bottom: 10px;
+}
+.dynamicInformation>h1 {
+	font-size: 30px;
+	color: #f60;
+	margin-top: 30px;
+	text-align: center;
+}
+.dynamicInformation>h2 {
+	font-size: 12px;
+	color: #f60;
+	margin-top: 10px;
+	text-align: center;
+}
+.pattern {
+	height: 20px;
+	position: relative;
+}
+.pattern>h3 {
+	height: 1px;
+	background: #f60;
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	top: 10px;
+}
+.pattern>span {
+	height: 10px;
+	width: 10px;
+	border:1px #f60 solid;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -6px;
+	top: 50%;
+	margin-top: -5px;
+}
+.dynamicInformation>p {
+	color: #EDD8B6;
+	text-align: center;
+	font-size: 12px;
+}
+.salesPromotion {
+	margin-top: 30px;
+}
+.salesPromotion li {
+	float: left;
+	width: 285px;
+	margin-left: 86px;
+	padding-bottom: 30px;
+	box-shadow: 0px 5px 5px #ccc;
+}
+.salesPromotion li>img {
+	display: block;
+	width: 285px;
+	height: 232px;
+}
+.salesPromotion li>h3 {
+	margin-top: 14px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	padding: 0 20px;
+}
+.salesPromotion li>h1 {
+	margin-top: 20px;
+	font-size: 16px;
+	color: #6E452E;
+	padding: 0 20px;
+}
+.salesPromotion li>p {
+	margin-top: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #6E452E;
+	height: 60px;
+	overflow: hidden;
+	padding: 0 20px;
+}
+.salesPromotion li>h4 {
+	margin-top: 30px;
+	padding: 0 20px;
+}
+.salesPromotion li>h4 a {
+	font-size: 12px;
+	color: #f60;
+	text-decoration: none;
+	font-weight: normal;
+}

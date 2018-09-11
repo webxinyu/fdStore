@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit"> 
+		<title>联系我们</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/navAndFooter.css"/>
+		<style type="text/css">
+			header {		/* banner */
+				height: 400px;
+				background: url(../img/banner03.png) no-repeat 50% 50% white;
+			}
+			.topInformation {
+				width: 1200px;
+				margin: 0 auto;
+				margin-top: 60px;
+				height: 60px;
+				overflow: hidden;
+			}
+			.address {
+				float: left;
+				width: 500px;
+			}
+			.zipCode {
+				float: right;
+				width: 500px;
+			}
+			.map {
+				width: 1200px;
+				height: 400px;
+				background: #f60;
+				margin: 0 auto;
+				margin-top: 20px;
+				margin-bottom: 60px;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<!-- 导航 -->
+		<div class="navCon">
+			<nav>
+				<div class="logo">
+					<img src="../img/logo.png" >
+				</div>
+				<ul class="navList">
+					<li>
+						<span class="navSlider"></span>
+						<a href="../index.html">首页</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="enterpriseInformation.html">企业信息</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="brandIdea.html">品牌理念</a>
+					</li>	
+					<li>
+						<span class="navSlider"></span>
+						<a href="recruit.html">招聘信息</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="contactUs.html">联系我们</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- banner -->
+		<header></header>
+		<!-- main -->
+		<section>
+			<div class="topInformation">
+				<div class="address">
+					<img src="" >
+					<p>地址：XXX省XXX市XXX路XXX号</p>
+				</div>
+				<div class="zipCode">
+					<img src="" >
+					<p>邮编：476000</p>
+				</div>
+			</div>
+			<!-- 地图 -->
+			<div class="map" id="map">
+				
+			</div>
+		</section>
+		
+		<footer>
+			<div class="footer">
+				<ul class="telAndAddress">
+					<li>
+						<div class="leftIcon">
+							<img src="../img/locationImg.png" >
+						</div>
+						<div class="rightTxt">
+							<h1>地址</h1>
+							<h2>XXX省XXX市XXX路XXX号</h2>
+						</div>
+					</li>
+					<li>
+						<div class="leftIcon">
+							<img src="../img/telImg.png" >
+						</div>
+						<div class="rightTxt">
+							<h1>电话</h1>
+							<h2>020-000000 000-000000</h2>
+						</div>
+					</li>
+				</ul>
+				<div class="qrCode">
+					<img src="../img/fsCode.jpg" >
+					<p>扫一扫，关注我们</p>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>©2018 孚点网络技术有限公司 版权所有</p>
+				<div class="softInformation">
+					<span>备案：豫ICP备15013154号-1</span>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/jsLibrary/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=cacSFLRoGTu2ELzvlbdgbgK8lpPef1N1"></script>
+		<script src="../js/jquery.baiduMap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/navAndFooter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/* 定义地图 */
+			new BaiduMap({
+				id: "map",
+				title: {
+					text: "孚点便利店",
+					className: "title"
+				},
+				content: {
+					className: "content",
+					text: ["地址：XXX省XXX市XXX路XXX号", "电话：0370-xxxxxxx"]
+				},
+				point: {
+					lng: 115.680881,
+					lat: 34.381432
+				},
+				level: 15,
+				zoom: true,
+				type: ["地图", "卫星", "三维"],
+				width: 390,
+				height: 70,
+				icon: {
+					url: "../img/mapicon.png",
+					width: 36,
+					height: 36
+				}
+			});
+		</script>
+	</body>
+</html>
