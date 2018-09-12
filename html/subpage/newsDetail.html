@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit"> 
+		<title>新闻详情</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/navAndFooter.css"/>
+		<style type="text/css">
+			header {		/* banner */
+				height: 400px;
+				background: url(../../img/enterpriceInformationBanner.png) no-repeat 50% 50% white;
+			}
+			section {
+				width: 1200px;
+				margin: 60px auto;
+				min-height: 600px;
+			}
+			section>h1 {
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				font-size: 24px;
+				color: #333;
+			}
+			section .bookmakerAndTime {
+				height: 60px;
+				overflow: hidden;
+			}
+			section .bookmakerAndTime>h2 {
+				float: left;
+				height: 60px;
+				line-height: 60px;
+				text-align: right;
+				width: 300px;
+				font-size: 14px;
+				color: #666;
+				font-weight: normal;
+			}
+			section .bookmakerAndTime>h3 {
+				float: right;
+				height: 60px;
+				line-height: 60px;
+				text-align: left;
+				width: 300px;
+				font-size: 14px;
+				color: #666;
+				font-weight: normal;
+			}
+			.newsContent {
+				padding: 0 100px;
+				color: #333;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<!-- 导航 -->
+		<div class="navCon">
+			<nav>
+				<div class="logo">
+					<img src="../../img/logo.png" >
+				</div>
+				<ul class="navList">
+					<li>
+						<span class="navSlider"></span>
+						<a href="../../index.html">首页</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="../enterpriseInformation.html">企业信息</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="../index.html">品牌理念</a>
+					</li>	
+					<li>
+						<span class="navSlider"></span>
+						<a href="../recruit.html">招聘信息</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="../contactUs.html">联系我们</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- banner -->
+		<header></header>
+		<!-- main -->
+		<section>
+			<h1 id="newTitle">好大一颗桃</h1>
+			<div class="bookmakerAndTime">
+				<h2 id="author"></h2>
+				<h3 id="time"></h3>
+			</div>
+			<div class="newsContent">
+				
+			</div>
+		</section>
+		
+		<footer>
+			<div class="footer">
+				<ul class="telAndAddress">
+					<li>
+						<div class="leftIcon">
+							<img src="../../img/locationImg.png" >
+						</div>
+						<div class="rightTxt">
+							<h1>地址</h1>
+							<h2>XXX省XXX市XXX路XXX号</h2>
+						</div>
+					</li>
+					<li>
+						<div class="leftIcon">
+							<img src="../../img/telImg.png" >
+						</div>
+						<div class="rightTxt">
+							<h1>电话</h1>
+							<h2>020-000000 000-000000</h2>
+						</div>
+					</li>
+				</ul>
+				<div class="qrCode">
+					<img src="../../img/fsCode.jpg" >
+					<p>扫一扫，关注我们</p>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>©2018 孚点网络技术有限公司 版权所有</p>
+				<div class="softInformation">
+					<span>备案：豫ICP备15013154号-1</span>
+				</div>
+			</div>
+		</footer>
+		<script src="../../js/jsLibrary/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/navAndFooter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">			
+			var newsList = [
+							{"newsId":"001","newsTitle":"好大一颗桃","newsTime":"2017-07-06","newsAuthor":"xiaofei","newsCon":"成熟的水蜜桃略呈球形，表面裹着一层细小的绒毛（这说明了毛桃和水蜜桃是一种的），青里泛白，白里透红。一个桃子一般重一百克到二百克，大的重三百多克。水蜜桃树属于落叶小乔木，树姿较开张，以中、长果枝结果为主，多复芽。 [1]  树皮中含有一种胶液，叫桃胶。一般树高3-4米。幼树生长旺盛，1年生长枝达1米以上。芽具有早熟性，树冠形成快。开始结果早，定植2～3年开始结果，6～7年达盛果期，15～20年后渐入衰老。桃树枝条向阳面为红色，背荫面为绿色，小枝光滑无毛，顶芽或倒芽1－3个丛生，叶片长披针形或椭圆状披针形，叶缘有锯齿，叶柄有腺点，花粉红色，果实球形外被有毛，果肉柔软多汁，果核甚大，沟纹深而明显。"},
+							{"newsId":"002","newsTitle":"熬夜答题记得多吃水果哟","newsTime":"2017-05-07","newsAuthor":"xiaofei","newsCon":"西瓜（学名：Citrullus lanatus (Thunb.) Matsum. et Nakai）一年生蔓生藤本；茎、枝粗壮，具明显的棱。卷须较粗壮，具短柔毛，叶柄粗，密被柔毛；叶片纸质，轮廓三角状卵形，带白绿色，两面具短硬毛，叶片基部心形。雌雄同株。雌、雄花均单生于叶腋。雄花花梗长3-4厘米，密被黄褐色长柔毛；花萼筒宽钟形；花冠淡黄色；雄蕊近离生，花丝短，药室折曲。雌花：花萼和花冠与雄花同；子房卵形，柱头肾形。果实大型，近于球形或椭圆形，肉质，多汁，果皮光滑，色泽及纹饰各式。种子多数，卵形，黑色、红色，两面平滑，基部钝圆，通常边缘稍拱起，花果期夏季。"},
+							{"newsId":"003","newsTitle":"吃葡萄不吐葡萄皮","newsTime":"2017-05-07","newsAuthor":"xiaofei","newsCon":"嫁接苗的田间管理：绿技嫁接后，及时灌水，做好砧木除萌和病害防治工作。嫁接后1周内保持土壤水分充足，地表面潮湿；及时、反复多次除掉砧木上的萌孽，集中营养，促进接芽萌发和生长。接芽抽生的新梢长到25-30厘米时，要插根竹竿或树条或拉细铁丝及时引绑，随着新梢的延长而不断地引绑，以防着地感病和折断。每株小苗只留l条新梢，新梢叶腋内发出的副梢随时留1片叶子摘心。生长后期（8月末到9月中旬）在新梢顶部摘心，促进枝条加粗和成熟。在6-7月份追施氮肥尿素或二铵各1次，每次每亩用量15千克，追后灌水；8月份追施磷、钾肥，叶片喷施0.3%的磷酸二氢钾或根施其他磷钾肥，每亩15-20千克。生长季节要经常（3-5次）除草和灌水，保持土壤疏松。苗木要引绑直立，使通风透光良好，以利苗木健壮生长，提高质量。病虫害防治应以预防为主。在嫁接前后，5月上旬开始，每隔10-15天喷1:0.5:200倍的波尔多液防病。一旦发生病虫害，可按病虫种类选择用药并及时喷洒消灭，使小苗健康生长。一般到10月1日前后准备出圃。首先作好苗木的品种、数量调查，拴好标牌，防止混杂。起苗前，撤掉插棍或铁丝，将混杂的苗木先挖出，而后在苗的基部往上或接口上留4-6个芽眼剪断，将剪下的枝条，分品种捆好放在阴凉处，去叶埋土保存。然后苗田灌水，使土壤松软，以利起苗。一般根系要求长25-30厘米，根干不劈裂，新梢粗0.7厘米以上的为合格苗"},
+							{"newsId":"004","newsTitle":"梦想属于每一个奋斗在路上的人","newsTime":"2017-05-07","newsAuthor":"xiaofei","newsCon":"每个人都有理想和追求，都有自己的梦想。大家都在讨论中国梦，我认为，实现中华民族伟大复兴，就是中华民族近代以来最伟大的梦想。这个梦想，凝聚了几代中国人的夙愿，体现了中华民族和中国人民的整体利益，是每一个中华儿女的共同期盼。历史告诉我们，每个人的前途命运都与国家和民族的前途命运紧密相连。国家好，民族好，大家才会好。实现中华民族伟大复兴是一项光荣而艰巨的事业，需要一代又一代中国人共同为之努力。空谈误国，实干兴邦。我们这一代共产党人一定要承前启后、继往开来，把我们的党建设好，团结全体中华儿女把我们国家建设好，把我们民族发展好，继续朝着中华民族伟大复兴的目标奋勇前进。中国梦，是中国共产党第十八次全国代表大会召开以来[1]，习近平总书记所提出的重要指导思想和重要执政理念，正式提出于2012年11月29日。习总书记把“中国梦”定义为“实现中华民族伟大复兴，就是中华民族近代以来最伟大梦想”，并且表示这个梦“一定能实现”。“中国梦”的核心目标也可以概括为“两个一百年”的目标，也就是：到2021年中国共产党成立100周年和2049年中华人民共和国成立100周年时，逐步并最终顺利实现中华民族的伟大复兴，具体表现是国家富强、民族振兴、人民幸福，实现途径是走中国特色的社会主义道路、坚持中国特色社会主义理论体系、弘扬民族精神、凝聚中国力量，实施手段是政治、经济、文化、社会、生态文明五位一体建设。"}
+							]
+			console.log(GetRequest().newsId);
+			for (var j = 0; j < newsList.length; j++) {
+				if (newsList[j].newsId == GetRequest().newsId) {
+					$("#newTitle").html(newsList[j].newsTitle);		//标题
+					$("#author").html('<span>作者：</span>'+newsList[j].newsAuthor);		//作者
+					$("#time").html('<span>发布日期：</span>'+newsList[j].newsTime);		//发布日期
+					$(".newsContent").html(newsList[j].newsCon);		//新闻内容
+				}
+			}
+			/* 获取url参数方法 */
+			function GetRequest() {   
+				var url = location.search; //获取url中"?"符后的字串   
+				var theRequest = new Object();   
+				if (url.indexOf("?") != -1) {   
+					var str = url.substr(1);   
+					strs = str.split("&");   
+					for(var i = 0; i < strs.length; i ++) {   
+						theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
+					}   
+				}   
+				return theRequest;   
+			}
+		</script>
+	</body>
+</html>

@@ -142,6 +142,7 @@
 	font-weight: normal;
 	color: #fff;
 	margin-left: 12px;
+	margin-right: 12px;
 }
 .news .imgNews ul li .bottomSummary h1 {
 	height: 33px;
@@ -150,6 +151,7 @@
 	font-weight: normal;
 	color: #fff;
 	margin-left: 12px;
+	margin-right: 12px;
 }
 .news .imgNews ul li .bottomSummary h2 {
 	margin-top: 10px;
@@ -157,6 +159,10 @@
 	font-weight: normal;
 	color: #fff;
 	margin-left: 12px;
+	margin-right: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .news .imgNews ul li:hover .newsImg {			/* 鼠标移入 */
 	width: 400px;

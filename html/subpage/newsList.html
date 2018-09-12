@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit"> 
+		<title>新闻列表</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/navAndFooter.css"/>
+		<style type="text/css">
+			header {		/* banner */
+				height: 400px;
+				background: url(../../img/enterpriceInformationBanner.png) no-repeat 50% 50% white;
+			}
+			section {
+				width: 1200px;
+				margin: 60px auto;
+				min-height: 600px;
+			}
+			section ul li {
+				height: 40px;
+				border-bottom: 1px #f60 dashed;
+				overflow: hidden;
+			}
+			section ul li:hover {
+				cursor: pointer;
+			}
+			section ul li:hover h1,			
+			section ul li:hover span {
+				color: #f60;
+			}
+			section ul li h1 {
+				float: left;
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				font-weight: normal;
+				color: #333;
+			}
+			section ul li span {
+				float: right;
+				height: 40px;
+				line-height: 40px;
+				font-size: 14px;
+				color: #999;
+				width: 200px;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<!-- 导航 -->
+		<div class="navCon">
+			<nav>
+				<div class="logo">
+					<img src="../../img/logo.png" >
+				</div>
+				<ul class="navList">
+					<li>
+						<span class="navSlider"></span>
+						<a href="../../index.html">首页</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="../enterpriseInformation.html">企业信息</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="../index.html">品牌理念</a>
+					</li>	
+					<li>
+						<span class="navSlider"></span>
+						<a href="../recruit.html">招聘信息</a>
+					</li>
+					<li>
+						<span class="navSlider"></span>
+						<a href="../contactUs.html">联系我们</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- banner -->
+		<header></header>
+		<!-- main -->
+		<section>
+			<ul id="newList">
+				<!-- <li>
+					<h1>好大一颗桃</h1>
+					<span>2017-07-06</span>
+				</li>
+				<li>
+					<h1>熬夜答题记得多吃水果哟</h1>
+					<span>2017-05-07</span>
+				</li> -->
+			</ul>
+		</section>
+		
+		<footer>
+			<div class="footer">
+				<ul class="telAndAddress">
+					<li>
+						<div class="leftIcon">
+							<img src="../../img/locationImg.png" >
+						</div>
+						<div class="rightTxt">
+							<h1>地址</h1>
+							<h2>XXX省XXX市XXX路XXX号</h2>
+						</div>
+					</li>
+					<li>
+						<div class="leftIcon">
+							<img src="../../img/telImg.png" >
+						</div>
+						<div class="rightTxt">
+							<h1>电话</h1>
+							<h2>020-000000 000-000000</h2>
+						</div>
+					</li>
+				</ul>
+				<div class="qrCode">
+					<img src="../../img/fsCode.jpg" >
+					<p>扫一扫，关注我们</p>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>©2018 孚点网络技术有限公司 版权所有</p>
+				<div class="softInformation">
+					<span>备案：豫ICP备15013154号-1</span>
+				</div>
+			</div>
+		</footer>
+		<script src="../../js/jsLibrary/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/navAndFooter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var newsList = [
+							{"newsId":"001","newsTitle":"好大一颗桃","newsTime":"2017-07-06"},
+							{"newsId":"002","newsTitle":"熬夜答题记得多吃水果哟","newsTime":"2017-05-07"},
+							{"newsId":"003","newsTitle":"吃葡萄不吐葡萄皮","newsTime":"2017-05-02"},
+							{"newsId":"004","newsTitle":"梦想属于每一个奋斗在路上的人！","newsTime":"2017-04-26"}
+							]
+			var newsListDom = "";
+			for (var i = 0; i < newsList.length; i++) {
+				newsListDom += '<li id="'+ newsList[i].newsId +'">'+
+									'<h1>'+ newsList[i].newsTitle +'</h1>'+
+									'<span>'+ newsList[i].newsTime +'</span>'+
+								'</li>'
+			}
+			$("#newList").html(newsListDom);
+			$("#newList li").on("click",function(){
+				window.location.href = 'newsDetail.html?newsId='+this.id;
+			})
+		</script>
+	</body>
+</html>
